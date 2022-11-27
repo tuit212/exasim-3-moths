@@ -1,0 +1,14 @@
+body {
+  background-image: url("../img/bg-image-2.png"), url("../img/bg-image.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover;
+  background-position: center 400px, 0 0;
+}
+
+.pizza__top-list {
+  height: 150px;
+}
+
+.pizza-more-list {
+  height: 80px;
+}

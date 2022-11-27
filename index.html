@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootsrtrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Pizza</title>
+</head>
+
+<body class="bg-secondary bg-opacity-25 text-white">
+  <main>
+    <section class="pizza pt-3">
+      <div class="pizza__container container">
+        <div class="pizza__inner">
+          <h1 class="pizza__title fs-3 text-center mb-5">Pitsa order</h1>
+          <div class="row flex-column flex-sm-row">
+            <div class="pizza__left-content col col-12 col-sm-8">
+              <form class="pizza__form form" 
+                id="form-btn">
+                <div class="form__select-content mb-5">
+                  <label class="fw-bold mb-2" for="pizza__select">Dough thickness</label>
+                  <select class="form__select form-select w-50" aria-label="Default select example" id="pizza__select"
+                    name="user-selected" required>
+                    <option value="Tanlanmagan" selected hidden>none</option>
+                  </select>
+                </div>
+
+                <div class="form__input-radio-content mb-5">
+                  <h2 class="fs-6">size</h2>
+                </div>
+
+                <div class="form__input-chek-content mb-5">
+                  <h2 class="fs-6">Ustiga nima solaylik?</h2>
+                </div>
+
+                <div class="form__input-chek-more">
+                  <h2 class="fs-6">Qo`shimchalar</h2>
+                </div>
+
+              </form>
+            </div>
+
+            <div id="list"
+              class="pizza__right-content   col col-12 col-sm-4 ps-2 ps-sm-4 mt-5 mt-sm-0 border border-white border-top-0 border-bottom-0 border-end-0">
+              <p class="fw-bold">Non: <span class="pizza__bread-span text-warning"></span></p>
+
+              <p class="fw-bold">Kattaligi: <span class="pizza__long-span text-warning"></span></p>
+
+              <div>
+                <p class="fw-bold">Ustiga:</p>
+                <ul class="pizza__top-list text-warning "></ul>
+              </div>
+
+              <div>
+                <p class="fw-bold">Add:</p>
+                <ul class="pizza-more-list text-warning"></ul>
+              </div>
+
+              <button class="pizza__btn btn btn-danger mt-3" form="form-btn" type="submit">Buyurtma berish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
